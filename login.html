@@ -5,13 +5,42 @@
         <link rel="stylesheet" href="public/stylesheets/style.css">
     </head>
     <body>
-    <form method="POST" action="login.html">
-      <section>
+      <h1>Cat Facts</h1>
+      <h2>Sign up to receive your daily cat facts! Who doesn't love cats? We have plenty of facts everyday that will make you love them even more!</h2>
+      <form method="POST" action="/signup" class="signup">
+      <h2 class="form-header">Sign Up Right Meow!</h2>
+      <section class="signup-info">
+        <label for="first-name">First Name</label>
+        <input type="text" name="firstname" id="first-name" placeholder="Your First Name">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="lastname" id="last-name" placeholder="Your Last Name">
+        <label for="phone">Telephone:</label>
+        <input type"tel" name="usrtel" id="phone">
+        <label for="select">Country</label>
+        <select>
+          <option>Canada</option>
+          <option>US</option>
+          <option>Japan</option>
+          <option>Zimbobwe</option>
+        </select>
+        <label for="gender">Gender?</label>
+        <input type="radio" name="gender" id="male" value="male">Male
+        <input type="radio" name="gender" id="female" value="female">Female
         <label for="email-field">Email</label>
         <input type="text" name="email" id="email-field" placeholder="email@email.com">
         <label for="password-field">Password</label>
         <input type="text" name="password" id="password-field" placeholder="Password">
-        <input type="submit"
+        <button class="button primary" type="submit"><span class="signup-button">Sign Up</span>
+        </button>
+      </section>
+    </form>
+    <form method="POST" action="/login" class="login">
+      <h2 class="form-header">Existing Users Login Here</h2>
+      <section class="login-email">
+        <label for="email-field">Email</label>
+        <input type="text" name="email" id="email-field" placeholder="email@email.com">
+        <label for="password-field">Password</label>
+        <input type="text" name="password" id="password-field" placeholder="Password">
       </section>
     </form>
     </body>
