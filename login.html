@@ -5,43 +5,52 @@
         <link rel="stylesheet" href="public/stylesheets/style.css">
     </head>
     <body>
-      <h1>Cat Facts</h1>
-      <h2>Sign up to receive your daily cat facts! Who doesn't love cats? We have plenty of facts everyday that will make you love them even more!</h2>
-      <form method="POST" action="/signup" class="signup">
+      <header>
+        <h1><img src="http://www.clker.com/cliparts/w/7/K/p/k/r/pink-paw-print-md.png" class="paw">Cat
+         Facts<img src="http://www.clker.com/cliparts/w/7/K/p/k/r/pink-paw-print-md.png" class="paw">
+         </h1>
+        <img src="public/images/sad-cat.jpeg" title="Don't you love me?" class="sad-cat">
+        <p>Sign up to receive your daily cat facts! Who doesn't love cats? We have plenty of facts 
+        everyday that will make you love them even <strong>more</strong>!</p>
+      </header>
+    <form method="POST" action="/signup" class="signup">
       <h2 class="form-header">Sign Up Right Meow!</h2>
-      <section class="signup-info">
-        <label for="first-name">First Name</label>
+      <div class="signup-label">
+        <label for="first-name" class="signup-label">First Name:</label>
+        <label for="last-name" class="signup-label">Last Name:</label>
+        <label for="email-field" class="signup-label">Email:</label>
+        <label for="password-field" class="signup-label">Password:</label>
+        <label for="phone" class="signup-label">Telephone:</label>
+      </div>
+      <div class="signup-input">
         <input type="text" name="firstname" id="first-name" placeholder="Your First Name">
-        <label for="last-name">Last Name</label>
         <input type="text" name="lastname" id="last-name" placeholder="Your Last Name">
-        <label for="phone">Telephone:</label>
-        <input type"tel" name="usrtel" id="phone">
-        <label for="select">Country</label>
-        <select>
-          <option>Canada</option>
-          <option>US</option>
-          <option>Japan</option>
-          <option>Zimbobwe</option>
-        </select>
-        <label for="gender">Gender?</label>
-        <input type="radio" name="gender" id="male" value="male">Male
-        <input type="radio" name="gender" id="female" value="female">Female
-        <label for="email-field">Email</label>
         <input type="text" name="email" id="email-field" placeholder="email@email.com">
-        <label for="password-field">Password</label>
         <input type="text" name="password" id="password-field" placeholder="Password">
-        <button class="button primary" type="submit"><span class="signup-button">Sign Up</span>
+        <input type"tel" name="usrtel" id="phone" placeholder="(000)000-0000">
+        <button class="button primary" type="submit"><span class="signup-button">Subscribe</span>
         </button>
-      </section>
+      </div>
     </form>
     <form method="POST" action="/login" class="login">
-      <h2 class="form-header">Existing Users Login Here</h2>
-      <section class="login-email">
-        <label for="email-field">Email</label>
-        <input type="text" name="email" id="email-field" placeholder="email@email.com">
-        <label for="password-field">Password</label>
-        <input type="text" name="password" id="password-field" placeholder="Password">
-      </section>
+      <h2 class="form-header">Subsribers Login</h2>
+      <div class="login-label">
+        <label for="login-email-field">Email:</label>
+        <label for="login-password-field">Password:</label>
+      </div>
+      <div class="login-input">
+        <input type="text" name="email" id="login-email-field" placeholder="email@email.com">
+        <input type="text" name="password" id="login-password-field" placeholder="Password">
+        <button class="enter" type="submit"><span class="enter-button">Enter</span>
+        </button>
+      </div>
+      <p>Welcome Back Fellow Subscribe-purrr!</p>
     </form>
+    <footer>
+      <p>You'll Love Our Spam! Me-Wow!</p>
+    </footer>
     </body>
 </html>
+
+
+
