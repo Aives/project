@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My Project</title>
+        <link rel"stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/8.8.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="public/stylesheets/style.css">
     </head>
     <body>
@@ -13,39 +14,64 @@
         <p>Sign up to receive your daily cat facts! Who doesn't love cats? We have plenty of facts 
         everyday that will make you love them even <strong>more</strong>!</p>
       </header>
-    <form method="POST" action="/signup" class="signup">
-      <h2 class="form-header">Sign Up Right Meow!</h2>
-      <div class="signup-label">
-        <label for="first-name" class="signup-label">First Name:</label>
-        <label for="last-name" class="signup-label">Last Name:</label>
-        <label for="email-field" class="signup-label">Email:</label>
-        <label for="password-field" class="signup-label">Password:</label>
-        <label for="phone" class="signup-label">Telephone:</label>
-      </div>
-      <div class="signup-input">
-        <input type="text" name="firstname" id="first-name" placeholder="Your First Name">
-        <input type="text" name="lastname" id="last-name" placeholder="Your Last Name">
-        <input type="email" name="email" id="email-field" placeholder="email@email.com">
-        <input type="password" name="password" id="password-field" placeholder="Password">
-        <input type"tel" name="usrtel" id="phone" placeholder="(000)000-0000">
-        <button class="button primary" type="submit"><span class="signup-button">Subscribe</span>
-        </button>
-      </div>
-    </form>
-    <form method="POST" action="/login" class="login">
-      <h2 class="form-header">Subsribers Login</h2>
-      <div class="login-label">
-        <label for="login-email-field">Email:</label>
-        <label for="login-password-field">Password:</label>
-      </div>
-      <div class="login-input">
-        <input type="email" name="email" id="login-email-field" placeholder="email@email.com">
-        <input type="password" name="password" id="login-password-field" placeholder="Password">
-        <button class="enter" type="submit"><span class="enter-button">Enter</span>
-        </button>
-      </div>
-      <p>Welcome Back Fellow Subscribe-purrr!</p>
-    </form>
+  <div class="row">
+    <div class="col-md-6" id="signup">
+      <form method="POST" action="/signup" class="signup-form" id="signup-form">
+        <h2 class="col-md-6" id="form-header">Sign Up Right Meow!</h2>
+        <div class="signup-group row">
+          <label for="first-name" class="col-md-4">First Name:</label>
+          <div class="col-md-8">
+            <input type="text" name="firstname" id="first-name" placeholder="Your First Name">
+          </div>
+        </div>
+        <div class="signup-group row">
+          <label for="last-name" class="col-md-4">Last Name:</label>
+          <div class="col-md-8">
+            <input type="text" name="lastname" id="last-name" placeholder="Your Last Name">
+          </div>
+        </div>
+        <div class="signup-group row">
+          <label for="email-field" class="col-md-4">Email:</label>
+          <div class="col-md-8">
+            <input type="email" name="email" id="email-field" placeholder="email@email.com">
+          </div>
+        </div>
+        <div class="signup-group row">
+          <label for="password-field" class="col-md-4">Password:</label>
+          <div class="col-md-8">
+            <input type="password" name="password" id="password-field" placeholder="Password">
+          </div>
+        </div>
+        <div class="signup-group row">
+          <label for="phone" class="col-md-4">Telephone:</label>
+          <div class="col-md-8">
+            <input type"tel" name="usrtel" id="phone" placeholder="(000)000-0000">
+          </div>
+        </div>
+        <div class="signup-group row">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button class="button primary" type="submit"><span class="signup-button">Subscribe</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="col-md-6" id="login">
+        <form method="POST" action="/login" class="login-form" id="login-form">
+          <h2 class="form-header">Subsribers Login</h2>
+          <div class="login-label">
+            <label for="login-email-field">Email:</label>
+            <label for="login-password-field">Password:</label>
+          </div>
+          <div class="login-input">
+            <input type="email" name="email" id="login-email-field" placeholder="email@email.com">
+            <input type="password" name="password" id="login-password-field" placeholder="Password">
+            <button class="login-button" type="submit" value="Login">Login
+            </button>
+          </div>
+          <p>Welcome Back Fellow Subscribe-purrr!</p>
+        </form>
+    </div>
+  </div>
     <footer>
       <p>You'll Love Our Spam! Me-Wow!</p>
     </footer>
